@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
     margin: 0;
     padding: 0;
@@ -6,58 +6,55 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-}
-
-h1{
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+  }
+  
+  h1 {
     font-size: 100px;
     font-family: serif;
     color: white;
     position: relative;
-
-}
-
-.circle{
+  }
+  
+  .circle {
     position: absolute;
     top: 100%;
     left: 100%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    animation: moveAround  6s infinite;
-
-}
-
-@keyframes moveAround {
-    0%{
-        top: 0;
-        left :0;
-        transform: translate(-50%,-50%) rotate(0deg);
+    background-color: white;
+    animation: moveAround 6s infinite;
+  }
+  
+  @keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%) rotate(0deg);
     }
-    25%{
-        top: 0;
-        left :calc(100% - 50px);
-        transform: translate(-50%,-50%) rotate(90deg);
+    25% {
+      top: 0;
+      left: calc(100% - 50px); 
+      transform: translate(-50%, -50%) rotate(90deg);
     }
-    50%{
-        top:calc(100%-50px);
-        left: calc(100%-50px);
-        transform: translate(-50%,-50%) rotate(180deg);
+    50% {
+      top: calc(100% - 50px);
+      left: calc(100% - 50px);
+      transform: translate(-50%, -50%) rotate(180deg);
     }
-    75%{
-        top: calc(100%-50px);
-        left: calc(100%-50px);
-        transform: translate(-50%,-50%) rotate(270deg);
+    75% {
+      top: calc(100% - 50px);
+      left: 0;
+      transform: translate(-50%, -50%) rotate(270deg);
     }
-    /*100%{
-        top: 0;
-        left:0;
-        transform: translate(-50%,-50%) rotate(360deg);
-
-    }*/
-    
-    
-}
+    100% {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
